@@ -11,7 +11,7 @@ app = Flask(__name__)
 def get_db_config(db_option):
         config = ConfigParser()
         # config.read('.\\srv\\app\\conf\\web.conf')
-        config.read('.srv/app/conf/web.conf')
+        config.read('srv/app/conf/web.conf')
         try:
                 result = config.get("database", db_option)
         except NoSectionError:
